@@ -1,3 +1,15 @@
-<p>
-  tabs works!
-</p>
+<table>
+  <tr>
+    <th
+    *ngFor="let topic of topics, index as i"
+    (click)="selectTopic(topic,i)"
+    [ngStyle]="{backgroundColor: topic === selectedTopic ? topic.color : null}"
+    >{{topic.name}}</th>
+  </tr> 
+</table>
+
+<app-tab
+[selectedTopicTitle]="selectedTopic?.name"
+[targetIndex]="selectedTopicIndex"
+[currentColor]="selectedTopic?.color"
+></app-tab>
