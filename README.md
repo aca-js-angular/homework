@@ -1,5 +1,9 @@
 # homework
 
-See details: https://docs.google.com/document/d/1kle_9DjaQOVcooxrA5ArnSvfRs8786EMxe9Ll0SWvns/edit
+Տնային: https://docs.google.com/document/d/1kle_9DjaQOVcooxrA5ArnSvfRs8786EMxe9Ll0SWvns/edit
 
-Each person should create new folder names his own name and work there.
+Բոլոր մասնակիցները պետք է ստեղծեն նոր թղթապանակ իրենց իսկ անունով և փոփոխությունները կատարեն այնտեղ 
+
+
+# Pull requests
+Բոլոր փոփոխությունները կատարել առանձին ճյուղի(branch) վրա և սարքել "pull request"
