@@ -25,6 +25,7 @@ export class TabsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.selectTopic(this.topics[1],2)
   }
 
 }
