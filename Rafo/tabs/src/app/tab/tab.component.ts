@@ -7,9 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TabComponent implements OnInit {
 
-  @Input() selectedTopicTitle: string;
-  @Input() targetIndex: number;
-  @Input() currentColor: string;
+  @Input() info: Object;
 
   descriptions: string[] = [
     'Home is where the heart is..',

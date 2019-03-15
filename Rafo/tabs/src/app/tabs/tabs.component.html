@@ -9,7 +9,9 @@
 </table>
 
 <app-tab
-[selectedTopicTitle]="selectedTopic?.name"
-[targetIndex]="selectedTopicIndex"
-[currentColor]="selectedTopic?.color"
+[info]="{
+  selectedTopicTitle: selectedTopic.name,
+  targetIndex: selectedTopicIndex,
+  currentColor: selectedTopic.color
+}"
 ></app-tab>
