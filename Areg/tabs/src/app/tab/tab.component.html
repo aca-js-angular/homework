@@ -1,18 +1,8 @@
-<app-tabs (pressedButton)="funk($event)"></app-tabs>
+<app-tabs (pressedButton)="openTub($event)" (pressedIndex)="tubTextbuilder($event)"></app-tabs>
 
 
-<div class="tabcontent" *ngIf="divName=='Home'" style="background-color:red">
-    <h3>Home</h3>
-    Home is where the heart is..</div>
+    
 
-<div class="tabcontent" *ngIf="divName=='News'" style="background-color:green">
-    <h3>News</h3>
-    Some news this fine day!</div>
-
-<div class="tabcontent" *ngIf="divName=='Contact'" style="background-color:blue">
-    <h3>Contact</h3>
-    Get in touch, or swing by for a cup of coffee.</div>
-
-<div class="tabcontent" *ngIf="divName=='About'" style="background-color:orange">
-    <h3>About</h3>
-    Who we are and what we do.</div>
+<div class="tabcontent" [style.background-color] = tabcolor>
+    <h3>{{divName}}</h3>
+{{tabcontent}}</div> 
