@@ -1,0 +1,10 @@
+<div *ngFor="let buts of buttonNames, index as i" (click)="pageOpen(buts, i) ">
+
+    <button class="tablink"  [style.background-color]="clikedName==buts ? colors[i] : ''" >{{buts}}</button>
+
+
+</div>
+
+
+
+
