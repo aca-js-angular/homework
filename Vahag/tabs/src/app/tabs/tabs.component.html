@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let tab of tabs, index as i"
+      (click)="changeSelectedTab(i)" 
+      [ngStyle]="{backgroundColor:  selectedTab.title===tab ? selectedTab.discription.color : null}">
+        {{ tab }}
+  </li>
+</ul>
+
+<app-tab [selected]="selectedTab" 
+         [ngStyle]="{backgorundColor: selectedTab===undefined ? null : selectedTab.discription.color}">
+        </app-tab>
