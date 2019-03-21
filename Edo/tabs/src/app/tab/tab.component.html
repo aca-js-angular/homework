@@ -1,2 +1,5 @@
-<h3>{{tabInformation[index].topicName}}</h3>
-<p>{{tabInformation[index].topic}}</p>
+<div [ngStyle]="{'backgroundColor': tab ? tab.color : null}">
+    <h2>{{tabInformation[index].topicName}}</h2>
+    <p>{{tabInformation[index].topic}}</p>
+</div>
+

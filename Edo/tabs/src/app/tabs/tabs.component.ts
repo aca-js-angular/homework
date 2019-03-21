@@ -22,8 +22,8 @@ export class TabsComponent implements OnInit {
     this.currentTab = tab;
     this.currentIndex = i;
   }
-
   ngOnInit() {
+    this.currentIndex = 0;
   }
 
 }
