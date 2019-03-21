@@ -1,5 +1,7 @@
-<button class="tablink" (click)="openPage('Home','red')" [ngStyle]="{'background-color': color1}">Home</button>
-<button class="tablink" (click)="openPage('News','green')"[ngStyle]="{'background-color': color2}">News</button>
-<button class="tablink" (click)="openPage('Contact','blue')"[ngStyle]="{'background-color': color3}">Contact</button>
-<button class="tablink" (click)="openPage('About','orange')"[ngStyle]="{'background-color': color4}">About</button>
-<app-tab [tabsDetails]="tabsDetails"></app-tab>
+<button 
+ *ngFor="let tab of tabs"
+ (click)="onSelect(tab)"
+  [ngStyle]="{backgroundColor: tab === selectedTab ? tab.color : null}"
+>{{tab.tabName}}</button>
+
+<app-tab [tab]="selectedTab"></app-tab>

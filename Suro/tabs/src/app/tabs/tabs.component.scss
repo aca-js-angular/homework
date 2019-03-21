@@ -4,7 +4,7 @@ body, html {
     font-family: Arial;
   }
   
-.tablink {
+button {
     background-color: #555;
     color: white;
     float: left;
@@ -16,6 +16,6 @@ body, html {
     width: 25%;
   }
   
-  .tablink:hover {
+ button:hover{
     background-color: #777;
   }
