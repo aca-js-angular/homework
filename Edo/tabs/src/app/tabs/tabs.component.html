@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li *ngFor="let tab of tabs; index as i" (click)="changeTab(tab,i)">
+      {{tab.tabName}}
+    </li>
+  </ul>
+<app-tab [index] = 'currentIndex || 0' [tab] = 'currentTab'></app-tab>
+</div>
