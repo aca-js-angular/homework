@@ -1,0 +1,7 @@
+<button 
+ *ngFor="let tab of tabs"
+ (click)="onSelect(tab)"
+  [ngStyle]="{backgroundColor: tab === selectedTab ? tab.color : null}"
+>{{tab.tabName}}</button>
+
+<app-tab [tab]="selectedTab"></app-tab>
