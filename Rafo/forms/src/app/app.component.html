@@ -1,0 +1,21 @@
+<form [formGroup]="inputData" (ngSubmit)="showMessage()">       
+
+    <input formControlName="firstName" type="text" placeholder="Name">
+
+    <br>
+    <input formControlName="lastName" type="text" placeholder="Surname">
+
+    <br>
+    <span>+{{country.value}}</span>
+    <input formControlName="phone" type="number" placeholder="Phone">
+    <select formControlName="country">
+        <option *ngFor="let country of countryDatabase" [value]="country.callingCodes">{{country.name}}</option>
+    </select>
+        
+    <br><br>
+    <button type="submit"
+    [disabled]="inputData.invalid"
+    [title]="inputData.invalid ? 'Invalid Input' : 'Click to Submit'"
+    >Submit</button>
+
+</form>
