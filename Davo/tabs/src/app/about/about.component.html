@@ -1,0 +1,29 @@
+<div class="tnayin">
+
+  <form #userForm="ngForm">
+    <div class="form-row align-items-center">
+      <div class="col-auto">
+        {{userForm.valid}}
+        <input required minlength="4" [(ngModel)]="users.firstName" name="firstName" type="text" class="form-control mb-2"
+          placeholder="First Name">
+        <input required minlength="4" [(ngModel)]="users.lastName" name="lastName" type="text" class="form-control mb-2"
+          placeholder="Last Name">
+
+        <div class="mdb-select md-form sel-city">
+
+          <select  class="form-control" [(ngModel)]="users.phone" name="select" >
+            <option selected >Select City...</option>
+
+            <option *ngFor="let city of cityandPhones; index as ind" 
+            [value]="city.callingCodes[0]"
+            >  {{city.name}} </option>
+          </select>
+        </div>
+
+        <input required type="phone" name="phone" class="form-control mb-2 phone" [value]="'+'+ users.phone" placeholder="Phone">
+
+      </div>
+    </div>
+    <button type="reset" class="btn btn-outline-info">Registration</button>
+  </form>
+</div>

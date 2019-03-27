@@ -1,0 +1,14 @@
+.tnayin {
+    margin: 5%;
+    width: 10%;
+    min-width: 300px
+}
+.ng-pristine input { 
+    border-left: 3.1px solid;
+    transition: border-color .3s ease-out;
+}
+.ng-invalid:not(form) { border-left: 3.1px solid #be1e1e;}
+.ng-valid[required], .ng-valid.required  {border-left: 3.1px solid #1893D5;}
+
+
+.phone { margin-top: 10%}
